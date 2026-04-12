@@ -12,6 +12,42 @@ const fieldSchemas: Record<string, { required: string[], optional: string[] }> =
     required: ['doc_type', 'employee_id', 'month_year', 'net_salary'],
     optional: ['employer_id', 'gross_salary']
   },
+  medical_bill: {
+    required: ['doc_type', 'bill_number', 'patient_name', 'hospital_name', 'total_amount', 'bill_date'],
+    optional: ['doctor_name', 'diagnosis', 'insurance_claim_amount']
+  },
+  medical_licence: {
+    required: ['doc_type', 'licence_number', 'doctor_name', 'specialization', 'issued_date'],
+    optional: ['expiry_date', 'issuing_body']
+  },
+  business_registration: {
+    required: ['doc_type', 'cin', 'company_name', 'incorporation_date', 'company_type'],
+    optional: ['registered_state']
+  },
+  driving_licence: {
+    required: ['doc_type', 'licence_number', 'holder_name', 'issue_date', 'expiry_date'],
+    optional: ['vehicle_class']
+  },
+  bank_statement: {
+    required: ['doc_type', 'account_number', 'account_holder', 'statement_period'],
+    optional: ['opening_balance', 'closing_balance']
+  },
+  insurance_policy: {
+    required: ['doc_type', 'policy_number', 'holder_name', 'policy_type', 'start_date', 'end_date'],
+    optional: ['premium_amount', 'sum_insured']
+  },
+  court_order: {
+    required: ['doc_type', 'case_number', 'court_name', 'order_date', 'parties_involved'],
+    optional: ['judge_name', 'order_type']
+  },
+  vehicle_registration: {
+    required: ['doc_type', 'registration_number', 'owner_name', 'vehicle_model', 'registration_date'],
+    optional: ['engine_number', 'chassis_number', 'expiry_date']
+  },
+  gst_registration: {
+    required: ['doc_type', 'gstin', 'business_name', 'registration_date', 'state'],
+    optional: ['business_type', 'cancellation_date']
+  },
 };
 
 // 0. Validate — only required fields are enforced
