@@ -48,6 +48,10 @@ const fieldSchemas: Record<string, { required: string[], optional: string[] }> =
     required: ['doc_type', 'gstin', 'business_name', 'registration_date', 'state'],
     optional: ['business_type', 'cancellation_date']
   },
+  jee_admit_card: {
+  required: ['doc_type', 'roll_number', 'application_number', 'candidate_name', 'date_of_birth', 'exam_date'],
+  optional: ['father_name', 'gender', 'category', 'state_of_eligibility', 'exam_shift', 'paper', 'exam_year']
+},
 };
 
 // 0. Validate — only required fields are enforced
