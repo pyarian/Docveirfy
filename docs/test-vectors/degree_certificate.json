@@ -1,0 +1,12 @@
+{
+  "input": {
+    "doc_type": "degree_certificate",
+    "reg_number": "MU-2022-ENG-00841",
+    "student_name": "Arjun Mehta",
+    "programme": "Computer Engineering",
+    "degree_type": "Bachelor of Engineering",
+    "graduation_year": 2022
+  },
+  "expected_canonical": "degree_type:bachelor of engineering|graduation_year:2022|programme:computer engineering|reg_number:mu-2022-eng-00841|student_name:arjun mehta",
+  "expected_sha256": "9ad84812629a75f5220ecda15de0837c55fa7a0a3eb09cf41b913ac2a6140762"
+}
